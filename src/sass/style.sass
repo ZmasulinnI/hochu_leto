@@ -1,0 +1,35 @@
+@import "normalizes.scss"
+@import "resets.scss"
+
+$color-white:#fff
+
+*
+    box-sizing: border-box
+
+.header
+    height: 672px
+    padding: 28px 32px 0px 32px
+    background-color: #554c4c
+
+.nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.list
+    &__menu
+        display: flex
+        flex-direction: row
+    &__menu-item
+        color: $color-white
+        font-size: 16px
+        margin-right: 50px
+
+.number
+    display: flex
+    align-items: center
+    gap: 9px
+    &__numeric
+        white-space: nowrap
+        font-size: 16px
+        color: $color-white
