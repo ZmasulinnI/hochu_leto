@@ -374,8 +374,8 @@ table {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.73) 21.62%, rgba(0, 0, 0, 0) 59.81%);
 }
 .header__large-logo {
-  top: 0;
   position: absolute;
+  top: 0;
   height: 100%;
   width: 100%;
   display: flex;
