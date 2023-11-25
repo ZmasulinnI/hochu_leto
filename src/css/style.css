@@ -372,6 +372,7 @@ table {
 .header {
   height: 100vh;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.73) 21.62%, rgba(0, 0, 0, 0) 59.81%);
+  margin-bottom: 64px;
 }
 .header__large-logo {
   position: absolute;
@@ -444,4 +445,25 @@ table {
 .visible {
   opacity: 100%;
   transition: opacity 3s;
+}
+
+.first-section {
+  max-width: 832px;
+  margin: 0 auto;
+}
+.first-section__header {
+  margin-bottom: 40px;
+}
+.first-section__main {
+  text-align: center;
+  font-size: 1.7vw;
+}
+
+.title {
+  text-align: center;
+  font-size: 3.3vw;
+  color: #3A7B22;
+}
+.title span {
+  color: #E96D00;
 }/*# sourceMappingURL=style.css.map */
