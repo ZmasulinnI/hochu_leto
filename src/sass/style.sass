@@ -1,10 +1,12 @@
 @import "normalizes.scss"
 @import "resets.scss"
+@import "galery.scss"
 
 $color-white:#fff
 
 *
     box-sizing: border-box
+
 
 .header-container
     padding: 28px 32px 0px 32px
@@ -75,13 +77,10 @@ $color-white:#fff
     opacity: 100%
     transition: opacity 3s
 
-.first-section 
-    // display: flex
-    // flex-direction: column
-    // justify-content: center
-    // align-items: center
+.first-section
     max-width: 832px
     margin: 0 auto
+    margin-bottom: 64px
     &__header
         margin-bottom: 40px
     &__main
@@ -94,3 +93,8 @@ $color-white:#fff
     color: #3A7B22
     span
         color: #E96D00
+
+.carousel-section
+    &__header
+        margin-bottom: 40px
+

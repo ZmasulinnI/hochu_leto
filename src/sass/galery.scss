@@ -1,0 +1,25 @@
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  // justify-content: center;
+
+  .card {
+    flex: 0 0 auto;
+    position: relative;
+    width: 373px;
+    height: 460px;
+    margin-right: 40px;
+    padding-left: 10px;
+    img {
+      position: absolute;
+      z-index: -1;
+    }
+    &:first-child {
+      margin-left: 64px;
+    }
+    &:last-child {
+      margin-right: 64px;
+    }
+  }
+}

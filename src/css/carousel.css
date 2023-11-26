@@ -1,0 +1,16 @@
+/* external css: flickity.css */
+* {
+  box-sizing: border-box;
+}
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}/*# sourceMappingURL=carousel.css.map */

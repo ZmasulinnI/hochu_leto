@@ -1,0 +1,23 @@
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.scrolling-wrapper .card {
+  flex: 0 0 auto;
+  position: relative;
+  width: 373px;
+  height: 460px;
+  margin-right: 40px;
+  padding-left: 10px;
+}
+.scrolling-wrapper .card img {
+  position: absolute;
+  z-index: -1;
+}
+.scrolling-wrapper .card:first-child {
+  margin-left: 64px;
+}
+.scrolling-wrapper .card:last-child {
+  margin-right: 64px;
+}/*# sourceMappingURL=galery.css.map */
