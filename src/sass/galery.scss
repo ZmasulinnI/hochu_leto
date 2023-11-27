@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  // justify-content: center;
+  
 
   .card {
     flex: 0 0 auto;
@@ -10,10 +10,24 @@
     width: 373px;
     height: 460px;
     margin-right: 40px;
-    padding-left: 10px;
     img {
+      border-radius: 16px;
+      z-index: 1;
+      width: 373px;
+      height: 100%;
       position: absolute;
-      z-index: -1;
+    }
+    p {
+      position: absolute;
+      z-index: 3;
+      right: 0;
+      left: 0;
+      bottom: 16px;
+      text-align: center;
+      width: 341px;
+      margin: 0 auto;
+      font-size: 16px;
+      color: #fff;
     }
     &:first-child {
       margin-left: 64px;
