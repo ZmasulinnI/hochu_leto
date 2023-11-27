@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&family=Shantell+Sans:wght@600&display=swap" rel="stylesheet">
     <title>HochuLeto</title>
 </head>
 <body>
@@ -20,16 +23,16 @@
                 </div>
                 <nav class="nav__menu list">
                     <ul class="list__menu">
-                        <li class="list__menu-item">О нас</li>
-                        <li class="list__menu-item">Мероприятия</li>
-                        <li class="list__menu-item">Галерея</li>
-                        <li class="list__menu-item">Мы на карте</li>
-                        <li class="list__menu-item">Контакты</li>
+                        <li class="list__menu-item"><a href="#about">О нас</a></li>
+                        <li class="list__menu-item"><a href="#events">Мероприятия</a></li>
+                        <li class="list__menu-item"><a href="#galery">Галерея</a></li>
+                        <li class="list__menu-item"><a href="#map">Мы на карте</a></li>
+                        <li class="list__menu-item"><a href="#map">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="nav__phone number">
                     <img src="icons/phone.svg" alt="" class="number__icon">
-                    <p class="number__numeric">+7 (921) 078-32-75</p>
+                    <p class="number__numeric"><a href="tel:+79210783275">+7 (921) 078-32-75</a></p>
                 </div>
             </div>
         </div>
@@ -37,19 +40,20 @@
             <img src="icons/large_logo.svg" alt="">
         </div>
     </div>
-    <div class="first-section">
+    <div class="first-section" id="about">
         <h2 class="first-section__header title">#Хочу<span>Инфу</span></h2> 
         <p class="first-section__main">В гастрокафе #хочулето родилась история вдохновения, начавшаяся с таинственного послания: "Хочу лето каждый день!" Теперь каждый гость встречает лето в каждом блюде, словно путешествуя по вкусам ярких сезонов. Приглашаем вас ощутить атмосферу лета в каждой тарелке – загляните в #хочулето и дайте вкусам вас увести в мир солнца и веселья!</p>
     </div>
     <script src="js/script.js"></script>
-    <div class="carousel-section">
+    <div class="carousel-section" id="events">
         <h2 class="carousel-section__header title">#Хочу<span>Движ</span></h2>
         <div class="carousel-section__galery">
             <div class="scrolling-wrapper">
                 <div class="card">
                     <div class="gradient-black"></div>
                     <img src="img/kids-cooking-and-having-fun-at-home 1.png" alt="">
-                    <p>Таким образом сложившаяся структура организации способствует повышению качества прогресса профессионального общества. Разнообразный и богатый опыт социально-экономическое развитие требует определения и уточнения соответствующих условий активизации.</p>
+                    <p>Организуйте увлекательные 
+                        мастер-классы для детей в гастрокафе #ХочуЛето, где творчество и вкус объединяются, чтобы создать незабываемые впечатления и радость для маленьких гурманов!</p>
                 </div>
                 <div class="card">
                     <div class="gradient-black"></div>
@@ -74,5 +78,41 @@
             </div>
         </div>
     </div>
+    <section class="photos" id="galery">
+        <div class="photos__header title">#Хочу<span>Посмотреть</div>
+        <div class="photos__flex photos-container">
+            <div class="photos-container__grid galery">
+                <img src="img/1qeG0oxPV1w 3.png" alt="" class="galery__item">
+                <img src="img/1qeG0oxPV1w 3.png" alt="" class="galery__item">
+                <img src="img/1qeG0oxPV1w 3.png" alt="" class="galery__item">
+                <img src="img/1qeG0oxPV1w 3.png" alt="" class="galery__item">
+            </div>
+            <div class="photos-container__grid galery">
+                <img src="img/1qeG0oxPV1w 3.png" alt="" class="galery__item">
+                <img src="img/1qeG0oxPV1w 3.png" alt="" class="galery__item">
+                <img src="img/1qeG0oxPV1w 3.png" alt="" class="galery__item">
+                <img src="img/1qeG0oxPV1w 3.png" alt="" class="galery__item">
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="map">
+        <div class="footer__header title">#Хочу<span>Прийти</div>
+        <div class="footer__map map-container">
+            <div class="map-container__about info">
+                <p class="info__title">Свяжитесь с нами:</p>
+                <p class="info__number">+79210783275</p>
+                <p class="info__data-work">Пн-Пт: с 10:00 до 20:00</p>
+                <p class="info__data-weekend">Сб-Вс:  с 11:00 до 20:00</p>
+                <div class="addres">
+                    <img src="icons/location icon.svg" alt="" class="addres__logo">
+                    <div class="addres__city-street">
+                        <p class="city">г. Архангельск</p>
+                        <p class="street">ул. Поморская, д.2</p>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0c1f5eda974796971f6c8102105caac654c4ff89a38d91fb62cf5c6cef74f73b&amp;width=100%25&amp;height=650&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+    </footer>
 </body>
 </html>

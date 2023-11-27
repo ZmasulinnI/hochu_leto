@@ -4,9 +4,20 @@
 
 $color-white:#fff
 
+html 
+    scroll-behavior: smooth
+
+
+a 
+    color: inherit
+    text-decoration: none
+
+
 *
     box-sizing: border-box
 
+body
+    background-color: #F8F9F1
 
 .header-container
     padding: 28px 32px 0px 32px
@@ -17,6 +28,7 @@ $color-white:#fff
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.73) 21.62%, rgba(0, 0, 0, 0.00) 59.81%)
     margin-bottom: 64px
     &__large-logo
+        z-index: -1
         position: absolute
         top: 0
         height: 100%
@@ -43,6 +55,8 @@ $color-white:#fff
         display: flex
         flex-direction: row
     &__menu-item
+        font-family: Comfortaa
+        font-weight: 500
         color: $color-white
         font-size: 16px
         margin-right: 50px
@@ -54,6 +68,8 @@ $color-white:#fff
     align-items: center
     gap: 9px
     &__numeric
+        font-family: Comfortaa
+        font-weight: 400
         white-space: nowrap
         font-size: 16px
         color: $color-white
@@ -85,16 +101,21 @@ $color-white:#fff
         margin-bottom: 40px
     &__main
         text-align: center
-        font-size: 1.7vw
+        font-size: 24px
+        font-family: Comfortaa
+        font-weight: 400
 
 .title
+    font-family: Shantell Sans
+    font-weight: 600
     text-align: center
-    font-size: 3.3vw
+    font-size: 48px
     color: #3A7B22
     span
         color: #E96D00
 
 .carousel-section
+    margin-bottom: 64px
     &__header
         margin-bottom: 40px
 
@@ -105,3 +126,75 @@ $color-white:#fff
     width: 100%
     height: 100%
     background: linear-gradient(180deg, rgba(42, 32, 32, 0.00) 50%, #1A1714 119.78%)
+
+.photos
+    margin-bottom: 64px
+    &__header
+        margin-bottom: 29px
+    &__flex
+        display: flex
+        // flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+        gap: 25px
+        
+.galery
+    display: grid
+    grid-template-columns: 0.5fr 0.5fr
+    grid-column-gap: 25px
+    grid-row-gap: 25px
+    &__item
+        border-radius: 16px
+
+.footer
+    padding-top: 22px
+    &__header
+        margin-bottom: 24px
+    &__map
+        position: relative
+.info
+    border-radius: 32px
+    position: absolute
+    z-index: 1
+    top: 145px
+    left: 147px
+    width: 400px
+    height: 400px
+    background-color: #F4E9CD
+    padding: 50px 100px 50px 50px
+    &__title
+        font-family: Comfortaa
+        font-weight: 600
+        font-size: 24px
+        margin-bottom: 32px
+    &__number
+        font-family: Comfortaa
+        font-weight: 400
+        font-size: 16px
+        margin-bottom: 16px
+    &__data-work
+        font-family: Comfortaa
+        font-weight: 400
+        font-size: 16px
+        margin-bottom: 16px
+    &__data-weekend
+        font-family: Comfortaa
+        font-weight: 400
+        font-size: 16px
+        margin-bottom: 123px
+
+
+
+.addres
+    display: flex
+    gap: 24px
+    align-items: center
+.city
+    font-family: Comfortaa
+    font-weight: 400
+    font-size: 16px
+    margin-bottom: 8px
+.street
+    font-family: Comfortaa
+    font-weight: 400
+    font-size: 16px
