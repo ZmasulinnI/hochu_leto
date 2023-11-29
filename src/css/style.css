@@ -364,7 +364,12 @@ table {
 .scrolling-wrapper {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-sizing: border-box;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 .scrolling-wrapper .card {
   flex: 0 0 auto;
@@ -372,6 +377,7 @@ table {
   width: 373px;
   height: 460px;
   margin-right: 40px;
+  box-sizing: border-box;
 }
 .scrolling-wrapper .card img {
   border-radius: 16px;
@@ -425,19 +431,17 @@ body {
 }
 
 .header {
+  position: relative;
   height: 100vh;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.73) 21.62%, rgba(0, 0, 0, 0) 59.81%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 15.63%, rgba(0, 0, 0, 0.2) 85.42%, rgba(0, 0, 0, 0.5) 100%);
   margin-bottom: 64px;
 }
 .header__large-logo {
-  z-index: -1;
+  z-index: 0;
   position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  top: calc(50% - 89px);
+  left: calc(50% - 133.5px);
+  height: 178px;
 }
 
 .nav {
@@ -463,6 +467,7 @@ body {
 }
 .list__menu-item {
   font-family: Comfortaa;
+  white-space: nowrap;
   font-weight: 500;
   color: #fff;
   font-size: 16px;
@@ -536,6 +541,17 @@ body {
 .carousel-section {
   margin-bottom: 64px;
 }
+.carousel-section__galery {
+  width: 96%;
+  margin: 0 auto;
+  overflow-x: scroll;
+  position: relative;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.carousel-section__galery::-webkit-scrollbar {
+  display: none;
+}
 .carousel-section__header {
   margin-bottom: 40px;
 }
@@ -571,6 +587,11 @@ body {
 .galery__item {
   border-radius: 16px;
 }
+@media screen and (max-width: 1024px) {
+  .galery__item {
+    width: 200px;
+  }
+}
 
 .footer {
   padding-top: 22px;
@@ -587,11 +608,18 @@ body {
   position: absolute;
   z-index: 1;
   top: 145px;
-  left: 147px;
+  left: 9%;
   width: 400px;
   height: 400px;
-  background-color: #F4E9CD;
+  background-color: #F8F9F1;
   padding: 50px 100px 50px 50px;
+  white-space: nowrap;
+}
+@media screen and (max-width: 920px) {
+  .info {
+    width: 300px;
+    height: 300px;
+  }
 }
 .info__title {
   font-family: Comfortaa;
