@@ -439,9 +439,9 @@ body {
 .header__large-logo {
   z-index: 0;
   position: absolute;
-  top: calc(50% - 100px);
-  height: 200px;
-  width: 100%;
+  top: calc(50% - 89px);
+  left: calc(50% - 133.5px);
+  height: 178px;
 }
 
 .nav {
@@ -467,6 +467,7 @@ body {
 }
 .list__menu-item {
   font-family: Comfortaa;
+  white-space: nowrap;
   font-weight: 500;
   color: #fff;
   font-size: 16px;
@@ -586,6 +587,11 @@ body {
 .galery__item {
   border-radius: 16px;
 }
+@media screen and (max-width: 1024px) {
+  .galery__item {
+    width: 200px;
+  }
+}
 
 .footer {
   padding-top: 22px;
@@ -602,11 +608,18 @@ body {
   position: absolute;
   z-index: 1;
   top: 145px;
-  left: 147px;
+  left: 9%;
   width: 400px;
   height: 400px;
   background-color: #F8F9F1;
   padding: 50px 100px 50px 50px;
+  white-space: nowrap;
+}
+@media screen and (max-width: 920px) {
+  .info {
+    width: 300px;
+    height: 300px;
+  }
 }
 .info__title {
   font-family: Comfortaa;
