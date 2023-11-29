@@ -1,7 +1,12 @@
 .scrolling-wrapper {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-sizing: border-box;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 .scrolling-wrapper .card {
   flex: 0 0 auto;
@@ -9,6 +14,7 @@
   width: 373px;
   height: 460px;
   margin-right: 40px;
+  box-sizing: border-box;
 }
 .scrolling-wrapper .card img {
   border-radius: 16px;
