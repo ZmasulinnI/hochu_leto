@@ -98,6 +98,7 @@ body
     max-width: 832px
     margin: 0 auto
     margin-bottom: 64px
+    padding: 0px 16px
     &__header
         margin-bottom: 40px
     &__main
@@ -105,6 +106,8 @@ body
         font-size: 24px
         font-family: Comfortaa
         font-weight: 400
+        @media screen and (max-width:425px)
+            font-size: 16px
 
 .title
     font-family: Shantell Sans
@@ -114,12 +117,14 @@ body
     color: #3A7B22
     span
         color: #E96D00
+    @media screen and (max-width:425px)
+        font-size: 32px
 
 .carousel-section
     margin-bottom: 64px
     &__galery
-        width: 96%
-        margin: 0 auto
+        width: 100%
+        // margin: 0 auto
         overflow-x: scroll
         position: relative
         scrollbar-width: none
@@ -155,8 +160,10 @@ body
     grid-row-gap: 25px
     &__item
         border-radius: 16px
-        @media screen and (max-width:1024px)
+        @media screen and (max-width:1024px) and (min-width: 450px)
             width: 200px
+        @media screen and (max-width: 449px)
+            width: 150px
 
 
 .footer
